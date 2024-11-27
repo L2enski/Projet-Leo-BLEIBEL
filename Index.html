@@ -3,11 +3,19 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Léo Bleibel</title>
+    <title>Projet Léo Bleibel</title>
     <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/a04a2d3c0d.js" crossorigin="anonymous"></script>
+    <link rel="shortcut icon" href="IMG/photo leo.PNG" type="image/x-icon">
 </head>
 <body>
-    <!-- Section 1 : Nom et Carrousel -->
+    <header>
+        <div class="social-icons">
+            <a href="https://www.instagram.com/" target="_blank" aria-label="instagram"><span class="fa-brands fa-instagram"></span></a>
+            <a href="https://www.facebook.com/m2z.92/" target="_blank" aria-label="Facebook"><span class="fa-brands fa-facebook"></span></a>
+            <a href="https://www.linkedin.com/in/leo-bleibel-15b5082b0/" target="_blank" aria-label="linkedin"><span class="fa-brands fa-linkedin"></span></a>
+        </div>
+    </header>    
     <div class="carousel-section">
         <div class="carousel-container">
             <button class="nav-button prev"></button>
@@ -20,13 +28,6 @@
             </div>
             <button class="nav-button next"></button>
         </div>
-        <div class="dots">
-            <span class="dot active"></span>
-            <span class="dot"></span>
-            <span class="dot"></span>
-            <span class="dot"></span>
-            <span class="dot"></span>
-        </div>
         <div class="intro">
             <div class="profile-pic">
                 <img src="IMG/photo leo.PNG" alt="Photo de profil">
@@ -34,8 +35,6 @@
             <h1>Léo Bleibel</h1>
         </div>
     </div>
-
-    <!-- Section 2 : Mes Projets -->
     <section class="projects">
         <h2>Mes projets</h2>
         <div class="project-grid">
@@ -54,13 +53,12 @@
             <a href="page5.html">
                 <div class="project-box" style="background-image: url('');"></div>
             </a>
-            <a href="Projet6/">
+            <a href="Projet6/index.html">
                 <div class="project-box" style="background-image: url('IMG/cv.png');">CV</div>
             </a>
         </div>        
     </section>
     <footer>
-        
         <section class="contact">
             <h2>Contactez Moi</h2>
             <form id="contact-form">
@@ -81,6 +79,7 @@
                     <textarea id="message" name="message" rows="4" required></textarea>
                 </div>
                 <button type="submit" id="submit-btn">Envoyer</button>
+                <p id="confirmation-message"></p>
             </form>
         </section>
     </footer>
@@ -88,4 +87,3 @@
     <script src="script.js"></script>
 </body>
 </html>
-

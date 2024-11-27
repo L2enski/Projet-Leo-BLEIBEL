@@ -1,4 +1,40 @@
 /* Contenus généraux */
+/* Header */
+header {
+    background-color: #222240; /* Fond sombre en accord avec ton design */
+    color: #d0e6ff; /* Texte clair */
+    padding: 10px 0;
+    text-align: right;
+    position: relative;
+    z-index: 10;
+}
+
+header h1 {
+    font-size: 2.5rem;
+    font-weight: bold;
+    margin: 0;
+    text-transform: uppercase;
+}
+
+header .point {
+    color: #d0e6ff; /* La couleur du point qui correspond au texte */
+}
+
+header .social-icons {
+    margin-top: 5px;
+}
+
+header .social-icons a {
+    color: #ffffff; /* Couleur des icônes */
+    font-size: 1.8rem;
+    margin: 0 15px;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+header .social-icons a:hover {
+    color: #000000; /* Couleur au survol */
+}
 body {
     margin: 0;
     padding: 0;
@@ -36,10 +72,6 @@ body {
     object-fit: cover;
     border-radius: 15px;
     transition: transform 0.3s, filter 0.3s;
-}
-
-.carousel img:hover {
-    transform: scale(1.05);
     filter: brightness(70%);
 }
 
@@ -47,13 +79,12 @@ body {
 .nav-button {
     position: absolute;
     top: 50%;
-    transform: translateY(-50%);
     background: transparent; /* Fond transparent */
     color: #d0e6ff;
     border: none;
     padding: 15px;
-    cursor: pointer;
-    z-index: 2;
+    cursor: crosshair;
+    z-index: 1;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -81,7 +112,7 @@ body {
 }
 
 .nav-button.next::before {
-    transform: rotate(45deg); /* Flèche pointant à droite */
+    transform: rotate(320deg); /* Flèche pointant à droite */
 }
 
 .nav-button.prev {
