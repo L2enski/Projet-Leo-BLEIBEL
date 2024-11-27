@@ -1,0 +1,167 @@
+.social-icons  {
+    color: #ffffff;
+    transition: transform 0.9s ease; /* ease : rendu plus agréable "naturel" pour ne pas gradir d'un coup */
+    padding: 4px 12px; 
+} 
+.social-icons a {
+    padding: 0px 4px;
+}
+
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.point {
+    font-family: "Yeseva One", serif;
+    font-weight: 700;
+    font-style: normal;
+    color: #10cf94;
+}
+
+.fa-brands:hover { /* lorsque la souris est au dessus des logos fa brands*/
+    transform: scale(1.30);/* echelle d'agrandissement 1.0 = 100% de la taille 1.30 = 130%*/
+}
+.fa-solid:hover { /* lorsque la souris est au dessus des logos fa solid*/
+    transform: scale(1.30);
+}
+
+h1  {
+    font-family: "Yeseva One", serif;
+    font-weight: 700;
+    font-style: normal;
+}
+
+body {
+    background-color: #11212b;
+    color: #ffffff;
+    line-height: 1.6;
+}
+
+h2 {
+    margin-left: 7%;
+    font-family: "Yeseva One", serif;
+    font-weight: 700;
+    font-style: normal;
+}
+
+.blue {
+    color: #10cf94;
+}
+
+h3 {
+    font-family: "Montserrat", sans-serif;
+    margin-left: 7%;
+    margin-right: 40%;
+    font-weight: 400;
+    color: rgb(90, 90, 90);
+}
+
+a {
+    color: inherit;
+    text-decoration: inherit; /* inherit : garde la couleur definie (empeche la couleur violette des liens)*/
+}
+
+nav {
+    margin-left: -3%;
+    font-family: "Montserrat", sans-serif;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+nav li {
+    display: inline-block; /* permet de mettre en ligne tout en gardant des "propriétées" de bloc*/
+    padding: 10px 20px; /* 10px = en haut et en bas 20px = a gauche et a droite*/
+    transition: transform 1.2s ease;
+}
+
+.cat li:hover {
+    transform: scale(1.10);
+    background-color: #10cf94; 
+    color: white; 
+    padding: 4px 12px; 
+}
+
+#projet {
+    background-color: #10cf94; 
+    color: white; 
+    padding: 4px 12px; 
+}
+
+.allimages {
+    margin-left: 6%;
+    margin-right: 6%;
+    display: grid; /* definis une "grille"/ place les éléments en grille */
+    grid-template-columns: repeat(auto-fit, minmax(20%, 1fr)); /* auto fit = ajustement automatique + taille minimum 20% de la grille 1fr peut s'etendre pour remplir l'espace dipso*/
+    grid-gap: 10px; /* espaces entres les elements de la grille */
+    margin: 0 6%; /* marge de 0 en haut et en bas et 6% a droite et a gauche */
+}
+
+.allimages img {
+    width: 100%;
+}
+
+.allimages img {
+    transition: transform 0.7s ease;
+}
+
+.allimages img:hover {
+    transform: scale(0.90);
+}
+
+@media screen and (max-width: 768px) { /* maximum de 768px ( correspond au telephones ) */
+    .allimages {
+        grid-template-columns: repeat(3, 1fr); /* 3 colonnes et 1 fragement de l'espace (pour proportion egales)*/
+}
+nav li {
+        display: inline-block; 
+        padding: 2px 2px;      
+}
+nav {
+    padding: 0px 10px; 
+    font-size: 70%; 
+    margin-left: -10%;
+}
+h3 {
+    font-family: "Montserrat", sans-serif;
+    margin-left: 6%;
+    margin-right: 30%;
+    font-size: 60%; 
+}
+    .allimages img:nth-child(n+10):nth-child(-n+16) { /* Desactiver Image 10 a 16*/
+    display: none;
+}
+.note {
+    display: none;
+}
+header{
+    flex-direction: column;
+}
+}
+
+@media screen and (min-width: 769px) and (max-width: 1024px) { /* 769px min et 1024px max ( Ecrans entre 769 et 1024px : tablettes )*/
+    .allimages {
+        grid-template-columns: repeat(5, 1fr); /* 5 colonnes et 1 fragement de l'espace (pour proportion egales)*/
+}
+    .allimages img:nth-child(16) { /* Desactiver Image 16 */
+        display: none;
+}
+.note {
+    display: none;
+}
+}
+
+.note {
+    margin-left: 80%;
+    font-family: "Yeseva One", serif;
+    font-weight: 800;
+    font-style: normal;
+}
+
+.fin {
+    font-family: "Yeseva One", serif;
+    font-weight: 800;
+    font-style: normal;
+    color: rgb(255, 255, 255);
+}
