@@ -1,0 +1,94 @@
+/* Réinitialisation de base */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #000000; /* Fond noir */
+    color: #fff; /* Texte en blanc */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.container {
+    text-align: center;
+    padding: 20px;
+    width: 80%;
+    background-color: #000000; /* Fond noir pour la section principale */
+    border: 2px solid #fff; /* Bordure blanche */
+    border-radius: 10px; /* Coins arrondis */
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.3); /* Ombre douce blanche */
+    transition: box-shadow 0.3s ease, transform 0.3s ease; /* Effet de survol */
+}
+
+/* Au survol de .container, on ajoute une ombre blanche plus marquée et un léger zoom */
+.container:hover {
+    box-shadow: 0 0 20px rgba(255, 255, 255, 0.8); /* Ombre plus nette */
+    transform: scale(1.05); /* Légère augmentation de la taille */
+}
+
+h1 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+    color: #fff; /* Texte en blanc */
+}
+
+.bio {
+    font-size: 1.2em;
+    margin-bottom: 40px;
+    color: #ddd; /* Texte de bio en gris clair */
+}
+
+/* Conteneur pour la galerie */
+.gallery-container {
+    width: 100%;
+    height: 0;
+    overflow-y: auto;
+    transition: height 0.5s ease;
+}
+
+.container:hover .gallery-container {
+    height: 500px;
+    max-height: 800px;
+}
+
+.photo-gallery {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr); /* 4 images par ligne */
+    gap: 20px;
+    padding: 20px;
+    justify-content: center;
+}
+
+.photo-gallery img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px; /* Bords arrondis */
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Effet de zoom et ombre */
+    border: 2px solid #fff; /* Contours blancs autour des images */
+}
+
+/* Effet de zoom et d'ombre sur les images au survol */
+.photo-gallery img:hover {
+    transform: scale(1.1); /* Zoom sur l'image */
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.5); /* Ombre blanche sur l'image */
+}
+
+/* Responsive: pour les écrans plus petits */
+@media (max-width: 768px) {
+    .photo-gallery {
+        grid-template-columns: repeat(2, 1fr); /* 2 images par ligne sur petits écrans */
+    }
+}
+
+@media (max-width: 480px) {
+    .photo-gallery {
+        grid-template-columns: 1fr; /* 1 image par ligne sur très petits écrans */
+    }
+}
