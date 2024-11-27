@@ -5,15 +5,20 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
     <script defer src="console.js"></script>
+    <link rel="shortcut icon" href="icn.png" type="image/x-icon">
     <title>SHIFUMI</title>
 </head>
 <body>
-    <H1>SHIFUMI</H1>
+    <header>
+        <h1>SHIFUMI</h1>
+    </header>
     <main>
-        <button>Pierre</button>
-        <button>Feuille</button>
-        <button>Ciseau</button>
-        <div id = result></div>
+        <div class="buttons">
+            <button data-choice="Pierre"><img src="Pierre.png" alt="Pierre"></button>
+            <button data-choice="Feuille"><img src="Feuille.png" alt="Feuille"></button>
+            <button data-choice="Ciseau"><img src="ciseaux.png" alt="Ciseau"></button>
+        </div>
+        <div id="result"></div>
     </main>
 </body>
 </html>
