@@ -161,7 +161,7 @@ body {
     object-fit: cover;
 }
 .profile-pic:hover{
-    transform: scale(110%);
+    transform: scale(1.1);
     transition: 0.3s ease
 }
 
@@ -221,7 +221,7 @@ body {
     box-shadow: 0 8px 15px rgba(0, 0, 0, 0.5);
 }
 .project-box:hover {
-transform: scale(110%);
+transform: scale(1.1);
 transition: 0.3s ease
 }
 footer {
